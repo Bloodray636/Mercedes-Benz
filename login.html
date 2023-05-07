@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Авторизация</title>
+        <!--CSS-->
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<!--Animate-->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!--Bootstrap CSS-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" >
+        <!--Icon Tab-->
+		<link rel="icon" type="image/png" href="img/logo.png" />
+    </head>
+    <body class="login">
+          <div class="container">
+            <div class="row">
+                <div class="form-login">
+                            <button type="button" class="btn-back btn-close ms-auto d-flex w-auto" aria-label="Close">
+                                <a href="index.html">
+                                    Назад
+                                </a>
+                            </button>
+                    <h1 class="text-center">Авторизация</h1>
+                    <div class="login-input">
+                        <label class="title-login" for="login">Логин</label>
+                        <input name="login" type="text" id="login" placeholder="Логин">
+                    </div>
+                    <div class="login-input">
+                        <label class="title-password" for="password">Пароль</label>
+                        <input name="password" type="password" id="password" placeholder="Пароль">
+                    </div>
+                    <div class="btn-login text-center">
+                        <button class="btn" onclick="login()">Войти</button>
+                        <a href="registration.html">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <script src="/pages/js/script.js"></script>
+    </body>
+    <!--JQuery link-->
+	<script src="js/jquery.js"></script>
+	<!--Bootstrap JS-->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!--JS-->
+	<script src="js/script.js"></script>
+</html>

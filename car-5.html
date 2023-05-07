@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cars</title>
+        <!--CSS-->
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<!--Animate-->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!--Bootstrap CSS-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" >
+        <!--Icon Tab-->
+		<link rel="icon" type="image/png" href="img/logo.png" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand text-center" href="index.html">
+                    <img class="img-logo" src="img/logo.png" alt="logo">
+                    Mercedes-Benz
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <img src="img/list.svg" alt="menu">
+                    </span>
+                  </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="company.html">Компания</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cars.html">Автомобили</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Обратная связь</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><button onclick="logout()">Выйти</button></a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="news-posts container">
+            <div class="row">
+                <div class="title-buy-car">
+                    <div class="title-news">
+                        <h1 class="text-center">Mercedes-AMG E 53 4MATIC+ Sedan</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 img-buy-car">
+                    <div class="img-about-car">
+                        <img src="img/19.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 align-middle d-flex align-items-center">
+                    <div class="charackteristic">
+                        <div class="row">
+                            <div class="price-title d-flex">
+                                <div class="name-cars">
+                                    <h1>Цена</h1>
+                                </div>
+                                <div class="car-price ms-auto">
+                                    <p class="ms-auto">13 925 220 ₽</p>
+                                </div>
+                            </div>
+                            <div class="charackteristic-car col-lg-4 col-md-6 col-6">
+                                <div class="icon-block">
+                                    <img src="img/calendar.svg" alt="calendar">
+                                </div>
+                                <div class="text-charackteristik">
+                                    <h1>Год выпуска</h1>
+                                    <p>2022</p>
+                                </div>
+                            </div>
+                            <div class="charackteristic-car col-lg-4 col-md-6 col-6">
+                                <div class="icon-block">
+                                    <img src="img/road.svg" alt="road">
+                                </div>
+                                <div class="text-charackteristik">
+                                    <h1>Пробег, км</h1>
+                                    <p>33</p>
+                                </div>
+                            </div>
+                            <div class="charackteristic-car col-lg-4 col-md-6 col-6">
+                                <div class="icon-block">
+                                    <img src="img/motor.svg" alt="motor">
+                                </div>
+                                <div class="text-charackteristik">
+                                    <h1>Двигатель</h1>
+                                    <p>435 л.c.</p>
+                                </div>
+                            </div>
+                            <div class="charackteristic-car col-lg-4 col-md-6 col-6">
+                                <div class="icon-block">
+                                    <img src="img/fuel.svg" alt="fuel">
+                                </div>
+                                <div class="text-charackteristik">
+                                    <h1>Тип топлива</h1>
+                                    <p>Бензиновый</p>
+                                </div>
+                            </div>
+                            <div class="charackteristic-car col-lg-4 col-md-6 col-6">
+                                <div class="icon-block">
+                                    <img src="img/drive.svg" alt="drive">
+                                </div>
+                                <div class="text-charackteristik">
+                                    <h1>Привод </h1>
+                                    <p>Полный</p>
+                                </div>
+                            </div>
+                            <div class="charackteristic-car col-lg-4 col-md-6 col-6">
+                                <div class="icon-block">
+                                    <img src="img/tranamission.svg" alt="tranamission">
+                                </div>
+                                <div class="text-charackteristik">
+                                    <h1>Разгон до 100</h1>
+                                    <p>4.5</p>
+                                </div>
+                            </div>
+                            <div class="buy">
+                                <div class="btn-booking text-center mt-5">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Забронировать
+                                    </button>
+                                </div>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title text-center" id="exampleModalLabel">Забронировать</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                                    <img src="img/close.svg" alt="close">
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div id="addPostForm" style="visibility: visible">
+                                                        <div class="create-input">
+                                                            <label for="postTitle" class="text-start">Ваше имя</label>
+                                                            <input type="text" id="postTitle" name="postTitle">
+                                                        </div>
+
+                                                        <div class="create-input">
+                                                            <label for="postTitle" class="text-start">Ваш email</label>
+                                                            <input type="email" id="postTitle" name="postTitle">
+                                                        </div>
+
+                                                        <div class="create-input">
+                                                            <label for="postTitle" class="text-start">Ваш телефон</label>
+                                                            <input type="number" id="postTitle" name="postTitle" value="+7">
+                                                        </div>
+
+                                                        <div class="create-input">
+                                                            <label for="postTag">Интересующая модель</label>
+                                                            <select id="postTag" class="form-select" name="postTag">
+                                                                <option value="Mercedes-Benz CLA 250 4MATIC">Mercedes-Benz EQC 400 4MATIC - 6 130 600 ₽</option>
+                                                                <option value="Mercedes-Benz CLA 250 4MATIC">Mercedes-Benz CLA 250 4MATIC - 2 583 610 ₽</option>
+                                                                <option value="Mercedes-Benz V-Class V 300 d">Mercedes-Benz V-Class V 300 d - 16 421 250 ₽</option>
+                                                                <option value="Mercedes-Benz E 200 d">Mercedes-Benz E 200 d - 2 517 925 ₽</option>
+                                                                <option value="Mercedes-AMG E 53 4MATIC+ Sedan">Mercedes-AMG E 53 4MATIC+ Sedan - 13 925 220 ₽</option>
+                                                                <option value="Mercedes-Benz GLC 220 d 4MATIC">Mercedes-Benz GLC 220 d 4MATIC - 3 196 970 ₽</option>
+                                                                <option value="Mercedes-Benz E 200 4MATIC">Mercedes-Benz E 200 4MATIC - 6 568 500 ₽</option>
+                                                                <option value="Mercedes-Benz GLC 220 d 4MATIC">Mercedes-Benz GLC 220 d 4MATIC - 8 320 100 ₽</option>
+                                                                <option value="Mercedes-Benz C 180 d">Mercedes-Benz C 180 d - 2 145 710 ₽</option>
+                                                                <option value="Mercedes-Benz GLA 200">Mercedes-Benz GLA 200 - 2 014 340 ₽</option>
+                                                                <option value="Mercedes-Benz E 300 d Coupe">Mercedes-Benz E 300 d Coupe - 5 167 220 ₽</option>
+                                                                <option value="Mercedes-AMG G 63">Mercedes-AMG G 63 - 31 966 700 ₽</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer text-center">
+                                                    <button type="button" onclick="addPost()" class="btn me-auto">Забронировать</button>
+                                                    <button type="button" class="btn btn-modal-close" data-bs-dismiss="modal">Закрыть</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="career-block container">
+            <div class="row">
+                <div class="col-lg-6 career-desktop">
+                    <div class="title-car-introductory">
+                        <h1 class="title-cars-name">Основные свойста</h1>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">История обслуживания</li>
+                            <li class="list-group-item">Сезонность шин <span>Лето</span></li>
+                            <li class="list-group-item">Число мест <span>5</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img-about-car">
+                        <img src="img/26.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 career-mobile">
+                    <div class="title-car-introductory">
+                        <h1 class="title-cars-name">Основные свойста</h1>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">История обслуживания</li>
+                            <li class="list-group-item">Сезонность шин <span>Лето</span></li>
+                            <li class="list-group-item">Число мест <span>5</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="about-car-introductory container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="img-about-car">
+                        <img src="img/27.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="title-car-introductory">
+                        <h1 class="title-cars-name">Комфорт</h1>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Датчик дождя</li>
+                            <li class="list-group-item">Датчик света</li>
+                            <li class="list-group-item">Запоминание параметров передних сидений</li>
+                            <li class="list-group-item">Климат</li>
+                            <li class="list-group-item">Многофункциональное рулевое колесо</li>
+                            <li class="list-group-item">Подогрев сидений</li>
+                            <li class="list-group-item">Премиальная аудиосистема</li>
+                            <li class="list-group-item">Электропривод зеркал</li>
+                            <li class="list-group-item">Электрорегулировка сидения водителя</li>
+                            <li class="list-group-item">Электрорегулировка сидения пассажира</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="career-block container">
+            <div class="row">
+                <div class="col-lg-6 career-desktop">
+                    <div class="title-car-introductory">
+                        <h1 class="title-cars-name">Оборудование</h1>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Bluetooth</li>
+                            <li class="list-group-item">MP3 проигрыватель</li>
+                            <li class="list-group-item">Бортовой компьютер</li>
+                            <li class="list-group-item">Круиз-контроль</li>
+                            <li class="list-group-item">Навигационная система</li>
+                            <li class="list-group-item">Обогрев зеркал заднего вида</li>
+                            <li class="list-group-item">Радио</li>
+                            <li class="list-group-item">Электропривод крышки багажника</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img-about-car">
+                        <img src="img/28.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 career-mobile">
+                    <div class="title-car-introductory">
+                        <h1 class="title-cars-name">Оборудование</h1>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Bluetooth</li>
+                            <li class="list-group-item">MP3 проигрыватель</li>
+                            <li class="list-group-item">Бортовой компьютер</li>
+                            <li class="list-group-item">Круиз-контроль</li>
+                            <li class="list-group-item">Навигационная система</li>
+                            <li class="list-group-item">Обогрев зеркал заднего вида</li>
+                            <li class="list-group-item">Радио</li>
+                            <li class="list-group-item">Электропривод крышки багажника</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="about-car-introductory container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="img-about-car">
+                        <img src="img/29.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="title-car-introductory">
+                        <h1 class="title-cars-name">Экстерьер</h1>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Литые диски</li>
+                            <li class="list-group-item">Спортивные сиденья</li>
+                            <li class="list-group-item">Спортивный интерьер</li>
+                            <li class="list-group-item">Спортивный экстерьер</li>
+                            <li class="list-group-item">Тип фар </li>
+                            <li class="list-group-item">Тип фар <span>Светодиодные</span></li>
+                            <li class="list-group-item">Тонировка</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="career-block container">
+            <div class="row">
+                <div class="col-lg-6 career-desktop">
+                    <div class="title-car-introductory">
+                        <h1 class="title-cars-name">Безопастность</h1>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">ESP</li>
+                            <li class="list-group-item">Isofix</li>
+                            <li class="list-group-item">Задние датчики парковки</li>
+                            <li class="list-group-item">Имобилайзер</li>
+                            <li class="list-group-item">Камера заднего вида</li>
+                            <li class="list-group-item">Передние датчики парковки</li>
+                            <li class="list-group-item">Подушки безопасности</li>
+                            <li class="list-group-item">Система мониторинга «мертвых зон</li>
+                            <li class="list-group-item">Система облегчения парковки</li>
+                            <li class="list-group-item">Система предотвращения столкновений</li>
+                            <li class="list-group-item">Фары дневного света</li>
+                            <li class="list-group-item">Центральный замок</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img-about-car">
+                        <img src="img/30.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 career-mobile">
+                    <div class="title-car-introductory">
+                        <h1 class="title-cars-name">Безопастность</h1>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">ESP</li>
+                            <li class="list-group-item">Isofix</li>
+                            <li class="list-group-item">Задние датчики парковки</li>
+                            <li class="list-group-item">Имобилайзер</li>
+                            <li class="list-group-item">Камера заднего вида</li>
+                            <li class="list-group-item">Передние датчики парковки</li>
+                            <li class="list-group-item">Подушки безопасности</li>
+                            <li class="list-group-item">Система мониторинга «мертвых зон</li>
+                            <li class="list-group-item">Система облегчения парковки</li>
+                            <li class="list-group-item">Система предотвращения столкновений</li>
+                            <li class="list-group-item">Фары дневного света</li>
+                            <li class="list-group-item">Центральный замок</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+
+          <footer>
+            <div class="container">
+                <div class="logo m-auto">
+                    <a class="navbar-brand text-start" href="index.html">
+                        <img class="img-logo" src="img/logo.png" alt="logo">
+                        Mercedes-Benz
+                    </a>
+                </div>
+            </div>
+                <div class="footer container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav class="navbar navbar-expand-lg">
+                                <ul class="navbar-nav m-auto d-flex">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="news.html">Новости</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="company.html">Компания</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="cars.html">Автомобили</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contacts.html">Контакты</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="feedback.html">Обратная связь</a>
+                                    </li>
+                                  </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="social-icon">
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/telegram.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/youtube.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/twitch.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/discord.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            <h1 class="text-center">© Copyright, Mercedes-Benz 2023.</h1>
+                        </div>
+                    </div>
+                  </div>
+          </footer>
+    </body>
+    <!--JQuery link-->
+	<script src="js/jquery.js"></script>
+	<!--Bootstrap JS-->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!--JS-->
+	<script src="js/script.js"></script>
+</html>

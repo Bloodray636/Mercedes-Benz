@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mercedes-Benz</title>
+        <!--CSS-->
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<!--Animate-->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!--Bootstrap CSS-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" >
+        <!--Icon Tab-->
+		<link rel="icon" type="image/png" href="img/logo.png" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand text-center" href="index.html">
+                    <img class="img-logo" src="img/logo.png" alt="logo">
+                    Mercedes-Benz
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <img src="img/list.svg" alt="menu">
+                    </span>
+                  </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="company.html">Компания</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cars.html">Автомобили</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Обратная связь</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><button onclick="logout()">Выйти</button></a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item slide-1 active">
+                <img src="img/1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5 class="text-start">Годовое общее собрание 2023</h5>
+                  <p class="text-start">Ежегодное общее собрание Mercedes-Benz состоится 3 мая 2023 года.</p>
+                  <button type="button" class="btn">Читать далее</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5 class="text-start">Результаты 1-го квартала 2023 года.</h5>
+                  <p class="text-start">Результаты Mercedes-Benz Q1 демонстрируют автомобили высшего класса и фургоны премиум-класса.</p>
+                  <button type="button" class="btn text-start">Читать далее</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5 class="text-start">Новый E-класс</h5>
+                  <p class="text-start">Мост между традициями и цифровизацией: мировая премьера в цифровом формате.</p>
+                  <button type="button" class="btn text-start">Читать далее</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5 class="text-start">Конференция ESG 2023.</h5>
+                  <p class="text-start">Mercedes-Benz подчеркивает приверженность ESG значительными достижениями и измеримыми целями.</p>
+                  <button type="button" class="btn text-start">Читать далее</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/5.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5 class="text-start">Отчет об устойчивом развитии за 2023 год.</h5>
+                  <button type="button" class="btn text-start">Читать далее</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующий</span>
+            </button>
+          </div>
+
+          <div class="news-posts container">
+            <div class="row">
+                <div class="block-create">
+                    <div class="title-news">
+                        <h1 class="text-center">Актуальные темы из мира Mercedes</h1>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <a href="posts.html">
+                        <div class="news h-100">
+                            <div class="img-news m-auto">
+                                <img src="img/6.jpg" alt="">
+                            </div>
+                            <p class="title-block">Новаторский проект для завода по переработке аккумуляторных батарей.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#">
+                        <div class="news h-100">
+                            <div class="img-news m-auto">
+                                <img src="img/7.jpg" alt="">
+                            </div>
+                            <p class="title-block">Существенные достижения и поддающиеся измерению цели.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#">
+                        <div class="news h-100">
+                            <div class="img-news m-auto">
+                                <img src="img/8.jpg" alt="">
+                            </div>
+                            <p class="title-block">Mercedes-Benz и Google объединяют усилия.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="btn-posts text-center mt-5">
+                    <a href="news.html">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Смотреть все
+                        </button>
+                    </a>
+                </div>
+            </div>
+          </div>
+
+          <div class="career-block container">
+            <div class="row">
+                <div class="col-lg-6 career-desktop">
+                    <div class="title-car-introductory">
+                        <h1 class="title-cars-about">Мы прогрессируем. С тобой.</h1>
+                        <h1 class="title-cars-name">Карьера в Mercedes-Benz</h1>
+                        <p class="title-cars-discription">Прогресс - это то, что вы приносите с собой.</p>
+                        <div class="btn-about-cars text-start">
+                            <a href="company.html">
+                                <button type="button" class="btn">
+                                    Читать далее
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img-about-car">
+                        <img src="img/10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 career-mobile">
+                    <div class="title-car-introductory">
+                        <h1 class="title-cars-about">Мы прогрессируем. С тобой.</h1>
+                        <h1 class="title-cars-name">Карьера в Mercedes-Benz</h1>
+                        <p class="title-cars-discription">Прогресс - это то, что вы приносите с собой.</p>
+                        <div class="btn-about-cars text-start">
+                            <a href="company.html">
+                                <button type="button" class="btn">
+                                    Узнать больше
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="about-car-introductory container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="img-about-car">
+                        <img src="img/9.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="title-car-introductory">
+                        <h1 class="title-cars-about">Автомобили</h1>
+                        <h1 class="title-cars-name">Mercedes-Benz</h1>
+                        <p class="title-cars-discription">Идеальное сочетание функциональности, комфорта и спортивного стиля.</p>
+                        <div class="btn-about-cars text-start">
+                            <a href="cars.html">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Узнать больше
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="about-car-introductory container">
+            <div class="row">
+                <div class="contact contact-desktop col-lg-6">
+                    <div class="contact-us">
+                        <h1 class="title-cars-about">Начните прямо сейчас</h1>
+                        <h1 class="title-cars-name">Вы найдете автомобиль</h1>
+                        <p class="title-cars-discription">Cоответствующий любым требованиям.</p>
+                        <div class="location">
+                            <div class="icon-location">
+                                <img src="img/map.svg" alt="map">
+                            </div>
+                            <div class="block-location">
+                                <p class="adress">бул. Архитекторов, 20/1</p>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="icon-location">
+                                <img src="img/phone.svg" alt="map">
+                            </div>
+                            <div class="block-location">
+                                <p class="adress">+7 (3812) 99-17-27</p>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="icon-location">
+                                <img src="img/link.svg" alt="map">
+                            </div>
+                            <div class="block-location">
+                                <p class="adress">Mercedes-Benz</p>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="icon-location">
+                                <img src="img/time.svg" alt="map">
+                            </div>
+                            <div class="block-location">
+                                <p class="adress">Eжедневно, 08:00–20:00</p>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="icon-location">
+                                <img src="img/mail.svg" alt="map">
+                            </div>
+                            <div class="block-location">
+                                <p class="adress">mercedes-benz@mail.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map col-lg-6 p-0">
+                    <div class="map-contact h-100">
+                        <div style="width: 100%; height:100%"><iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D0%B1%D1%83%D0%BB.%20%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BE%D0%B2,%2020/1+(Mercedes-Benz)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
+                    </div>
+                </div>
+                <div class="contact contact-mobile col-lg-6">
+                    <div class="contact-us">
+                        <h1 class="title-cars-about">Начните прямо сейчас</h1>
+                        <h1 class="title-cars-name">Вы найдете автомобиль</h1>
+                        <p class="title-cars-discription">Cоответствующий любым требованиям.</p>
+                        <div class="location">
+                            <div class="icon-location">
+                                <img src="img/map.svg" alt="map">
+                            </div>
+                            <div class="block-location">
+                                <p class="adress">бул. Архитекторов, 20/1</p>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="icon-location">
+                                <img src="img/phone.svg" alt="map">
+                            </div>
+                            <div class="block-location">
+                                <p class="adress">+7 (3812) 99-17-27</p>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="icon-location">
+                                <img src="img/link.svg" alt="map">
+                            </div>
+                            <div class="block-location">
+                                <p class="adress">Mercedes-Benz</p>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="icon-location">
+                                <img src="img/time.svg" alt="map">
+                            </div>
+                            <div class="block-location">
+                                <p class="adress">Eжедневно, 08:00–20:00</p>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="icon-location">
+                                <img src="img/mail.svg" alt="map">
+                            </div>
+                            <div class="block-location">
+                                <p class="adress">mercedes-benz@mail.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="about-car-introductory container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="img-about-car">
+                        <img src="img/11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feedback">
+                        <h1 class="title-cars-about">Самовыражение</h1>
+                        <h1 class="title-cars-name">Безупречность</h1>
+                        <p class="title-cars-discription">Проявите индивидуальность.</p>
+                        <div id="addPostForm" style="visibility: visible">
+                            <div class="feedback-input">
+                                <label for="postTitle" class="">Ф.И.О.</label>
+                                <input type="text" id="postTitle" name="postTitle">
+                            </div>
+
+                            <div class="feedback-input">
+                                <label for="postTitle" class="">Email</label>
+                                <input type="email" id="postTitle" name="postTitle">
+                            </div>
+
+                            <div class="feedback-input">
+                                <label for="postBody">Ваше сообщение</label>
+                                <textarea id="postBody" name="postBody" rows="10" cols="45"></textarea>
+                            </div>
+
+                            <div class="btn-about-cars text-start">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Отправить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <footer>
+            <div class="container">
+                <div class="logo m-auto">
+                    <a class="navbar-brand text-start" href="index.html">
+                        <img class="img-logo" src="img/logo.png" alt="logo">
+                        Mercedes-Benz
+                    </a>
+                </div>
+            </div>
+                <div class="footer container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav class="navbar navbar-expand-lg">
+                                <ul class="navbar-nav m-auto d-flex">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="news.html">Новости</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="company.html">Компания</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="cars.html">Автомобили</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contacts.html">Контакты</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="feedback.html">Обратная связь</a>
+                                    </li>
+                                  </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="social-icon">
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/telegram.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/youtube.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/twitch.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/discord.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            <h1 class="text-center">© Copyright, Mercedes-Benz 2023.</h1>
+                        </div>
+                    </div>
+                  </div>
+          </footer>
+    </body>
+    <!--JQuery link-->
+	<script src="js/jquery.js"></script>
+	<!--Bootstrap JS-->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!--JS-->
+	<script src="js/script.js"></script>
+</html>

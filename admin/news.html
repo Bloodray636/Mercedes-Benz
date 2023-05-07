@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News</title>
+        <!--CSS-->
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<!--Animate-->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!--Bootstrap CSS-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" >
+        <!--Icon Tab-->
+		<link rel="icon" type="image/png" href="img/logo.png" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand text-center" href="#">
+                    <img class="img-logo" src="img/logo.png" alt="logo">
+                    Mercedes-Benz
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <img src="img/list.svg" alt="menu">
+                    </span>
+                  </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="news.html">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cars.html">Бронирование</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Обращения</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login.html"><button onclick="logout()">Выйти</button></a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="bg-news">
+            <div class="container">
+                <h1 class="title-news text-center">Актуальные новости и темы</h1>
+            </div>
+          </div>
+
+          <div class="news-posts container">
+            <div class="row">
+                <div class="block-create">
+                    <div class="title-news">
+                        <h1 class="text-center">Актуальные темы из мира Mercedes</h1>
+                    </div>
+                    <div class="create-posts">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Создать пост
+                        </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title text-center" id="exampleModalLabel">Создать пост</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                        <img src="img/close.svg" alt="close">
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="addPostForm" style="visibility: visible">
+                                            <div class="create-input">
+                                                <label for="postTitle" class="">Заголовок</label>
+                                                <input type="text" id="postTitle" name="postTitle">
+                                            </div>
+        
+                                            <div class="create-input">
+                                                <label for="postBody">Содержимое</label>
+                                                <textarea id="postBody" name="postBody" rows="10" cols="45"></textarea>
+                                            </div>
+        
+                                            <div class="create-input">
+                                                <label for="postImage">Изображение</label>
+                                                <input id="postImage" class="image-input" name="postImage" type="file" accept="image/*">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer text-center">
+                                        <button type="button" onclick="addPost()" class="btn me-auto">Создать</button>
+                                    <button type="button" class="btn btn-modal-close" data-bs-dismiss="modal">Закрыть</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <a href="posts.html">
+                        <div class="news h-100">
+                            <div class="img-news m-auto">
+                                <img src="img/6.jpg" alt="">
+                            </div>
+                            <p class="title-block">Новаторский проект для завода по переработке аккумуляторных батарей.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#">
+                        <div class="news h-100">
+                            <div class="img-news m-auto">
+                                <img src="img/7.jpg" alt="">
+                            </div>
+                            <p class="title-block">Существенные достижения и поддающиеся измерению цели.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#">
+                        <div class="news h-100">
+                            <div class="img-news m-auto">
+                                <img src="img/8.jpg" alt="">
+                            </div>
+                            <p class="title-block">Mercedes-Benz и Google объединяют усилия.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="posts.html">
+                        <div class="news h-100">
+                            <div class="img-news m-auto">
+                                <img src="img/6.jpg" alt="">
+                            </div>
+                            <p class="title-block">Новаторский проект для завода по переработке аккумуляторных батарей.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#">
+                        <div class="news h-100">
+                            <div class="img-news m-auto">
+                                <img src="img/7.jpg" alt="">
+                            </div>
+                            <p class="title-block">Существенные достижения и поддающиеся измерению цели.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#">
+                        <div class="news h-100">
+                            <div class="img-news m-auto">
+                                <img src="img/8.jpg" alt="">
+                            </div>
+                            <p class="title-block">Mercedes-Benz и Google объединяют усилия.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="posts.html">
+                        <div class="news h-100">
+                            <div class="img-news m-auto">
+                                <img src="img/6.jpg" alt="">
+                            </div>
+                            <p class="title-block">Новаторский проект для завода по переработке аккумуляторных батарей.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#">
+                        <div class="news h-100">
+                            <div class="img-news m-auto">
+                                <img src="img/7.jpg" alt="">
+                            </div>
+                            <p class="title-block">Существенные достижения и поддающиеся измерению цели.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#">
+                        <div class="news h-100">
+                            <div class="img-news m-auto">
+                                <img src="img/8.jpg" alt="">
+                            </div>
+                            <p class="title-block">Mercedes-Benz и Google объединяют усилия.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="posts.html">
+                        <div class="news h-100">
+                            <div class="img-news m-auto">
+                                <img src="img/6.jpg" alt="">
+                            </div>
+                            <p class="title-block">Новаторский проект для завода по переработке аккумуляторных батарей.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#">
+                        <div class="news h-100">
+                            <div class="img-news m-auto">
+                                <img src="img/7.jpg" alt="">
+                            </div>
+                            <p class="title-block">Существенные достижения и поддающиеся измерению цели.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#">
+                        <div class="news h-100">
+                            <div class="img-news m-auto">
+                                <img src="img/8.jpg" alt="">
+                            </div>
+                            <p class="title-block">Mercedes-Benz и Google объединяют усилия.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+          </div>
+
+
+          
+
+          <footer>
+            <div class="container">
+                <div class="logo m-auto">
+                    <a class="navbar-brand text-start" href="index.html">
+                        <img class="img-logo" src="img/logo.png" alt="logo">
+                        Mercedes-Benz
+                    </a>
+                </div>
+            </div>
+                <div class="footer container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav class="navbar navbar-expand-lg">
+                                <ul class="navbar-nav m-auto d-flex">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="news.html">Новости</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="cars.html">Бронирование</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link  active" href="feedback.html">Обращения</a>
+                                    </li>
+                                  </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="social-icon">
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/telegram.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/youtube.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/twitch.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/discord.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            <h1 class="text-center">© Copyright, Mercedes-Benz 2023.</h1>
+                        </div>
+                    </div>
+                  </div>
+          </footer>
+    </body>
+    <!--JQuery link-->
+	<script src="js/jquery.js"></script>
+	<!--Bootstrap JS-->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!--JS-->
+	<script src="js/script.js"></script>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback</title>
+        <!--CSS-->
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<!--Animate-->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!--Bootstrap CSS-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" >
+        <!--Icon Tab-->
+		<link rel="icon" type="image/png" href="img/logo.png" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand text-center" href="index.html">
+                    <img class="img-logo" src="img/logo.png" alt="logo">
+                    Mercedes-Benz
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <img src="img/list.svg" alt="menu">
+                    </span>
+                  </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="company.html">Компания</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cars.html">Автомобили</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="feedback.html">Обратная связь</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><button onclick="logout()">Выйти</button></a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="bg-feedback">
+            <div class="container">
+                <h1 class="title-news text-center">Будущее вдохновляет</h1>
+            </div>
+          </div>
+
+          <div class="news-posts container">
+            <div class="row">
+                <div class="about-car-introductory container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="img-about-car">
+                                <img src="img/11.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feedback">
+                                <h1 class="title-cars-about">Самовыражение</h1>
+                                <h1 class="title-cars-name">Безупречность</h1>
+                                <p class="title-cars-discription">Проявите индивидуальность.</p>
+                                <div id="addPostForm" style="visibility: visible">
+                                    <div class="feedback-input">
+                                        <label for="postTitle" class="">Ф.И.О.</label>
+                                        <input type="text" id="postTitle" name="postTitle">
+                                    </div>
+        
+                                    <div class="feedback-input">
+                                        <label for="postTitle" class="">Email</label>
+                                        <input type="email" id="postTitle" name="postTitle">
+                                    </div>
+        
+                                    <div class="feedback-input">
+                                        <label for="postBody">Ваше сообщение</label>
+                                        <textarea id="postBody" name="postBody" rows="10" cols="45"></textarea>
+                                    </div>
+        
+                                    <div class="btn-about-cars text-start">
+                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            Отправить
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+
+          
+
+          <footer>
+            <div class="container">
+                <div class="logo m-auto">
+                    <a class="navbar-brand text-start" href="index.html">
+                        <img class="img-logo" src="img/logo.png" alt="logo">
+                        Mercedes-Benz
+                    </a>
+                </div>
+            </div>
+                <div class="footer container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav class="navbar navbar-expand-lg">
+                                <ul class="navbar-nav m-auto d-flex">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="news.html">Новости</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="company.html">Компания</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="cars.html">Автомобили</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contacts.html">Контакты</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="feedback.html">Обратная связь</a>
+                                    </li>
+                                  </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="social-icon">
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/telegram.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/youtube.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/twitch.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="img/discord.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            <h1 class="text-center">© Copyright, Mercedes-Benz 2023.</h1>
+                        </div>
+                    </div>
+                  </div>
+          </footer>
+    </body>
+    <!--JQuery link-->
+	<script src="js/jquery.js"></script>
+	<!--Bootstrap JS-->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!--JS-->
+	<script src="js/script.js"></script>
+</html>
